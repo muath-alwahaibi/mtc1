@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #0f172a;
+  --color-text: #f1f5f9;
+  --color-border: #334155;
+  --color-panel: #020617;
+  --color-card: #1e293b;
+  --color-secondary-text: #94a3b8;
+}
+
+[data-theme='light'] {
+  --color-bg: #f8fafc;
+  --color-text: #0f172a;
+  --color-border: #e2e8f0;
+  --color-panel: #ffffff;
+  --color-card: #f1f5f9;
+  --color-secondary-text: #64748b;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-media-blue: #2563eb;
+  --color-media-gold: #fbbf24;
+  --color-media-dark: var(--color-bg);
+  --color-media-panel: var(--color-panel);
+  --color-media-border: var(--color-border);
+  --color-media-card: var(--color-card);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Arabic:wght@400;600;700&display=swap');
+
+.arabic-font {
+  font-family: "Noto Sans Arabic", sans-serif;
+  line-height: 1.6;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+[dir="rtl"] .arabic-font {
+  text-align: right;
+}
+
+.glass-morphism {
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gold-glow {
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+.x-character-warning {
+  color: #ef4444;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}

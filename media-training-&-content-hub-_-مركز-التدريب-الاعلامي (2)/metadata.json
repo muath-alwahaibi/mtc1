@@ -1,0 +1,6 @@
+{
+  "name": "Media Training & Content Hub | مركز التدريب الاعلامي",
+  "description": "منصة استراتيجية متكاملة لصناعة المحتوى الإبداعي والتدقيق اللغوي، مصممة خصيصاً لمركز التدريب الإعلامي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Content Generation", "Social Media Preview", "Bilingual Support"]
+}
